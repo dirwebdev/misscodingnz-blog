@@ -49,7 +49,24 @@
     ```
 
 4. Commit the staged files to the repository
-5. Add remote origin
+    - committed initial files
+    ```bash
+    git commit -m "new hugo site, with tutorial commands"
+    ```
+
+5. Make sure you are on Main branch, add remote origin and push repository to github
+    - make sure you are on the main branch
+        ```bash
+        git branch -M main
+        ```
+    - add remote origin
+        ```bash
+        git remote add origin https://github.com/dirwebdev/misscodingnz-blog.git
+        ```
+    - push repository to github
+        ```bash
+        git push -U origin main
+        ```
 6. Create .git ignore
     - site used to create .gitignore
         - https://www.toptal.com/developers/gitignore
@@ -63,4 +80,23 @@
          touch .gitignore
          ```
         - copy and paste generated .gitignore text into new .gitignore file and save.
-    
+    - commit new .gitignore to repository.
+        ```bash
+        git add .
+        git commit -m "added .gitignore updated tutorial_info"
+        ```
+7. Add hugo theme:
+    - Link for hugo themes
+        - https://themes.gohugo.io/
+    - Theme used in tutorial
+        - https://themes.gohugo.io/themes/blist-hugo-theme/
+    - Add theme submodule to site:
+        ```bash
+        git submodule add https://github.com/apvarun/blist-hugo-theme.git themes/blist
+        ```
+    - install necessary modules
+        - postcss-cli
+            - to use PostCss with Hugo build
+                ```bash
+                npm i -g postcss-cli
+                ```  
