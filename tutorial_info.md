@@ -35,14 +35,32 @@
 
 1. Create new site
 
-```bash
-hugo new site misscodingnz-blog
-```
+    ```bash
+    hugo new site misscodingnz-blog
+    ```
 2. Initiliaze a git repository
 
-```bash
-git init
-```
+    ```bash
+    git init
+    ```
 3. Add files to staging
+    ```bash
+    git add .
+    ```
+
 4. Commit the staged files to the repository
 5. Add remote origin
+6. Create .git ignore
+    - site used to create .gitignore
+        - https://www.toptal.com/developers/gitignore
+            - added flags:
+                - VisualStudioCode
+                - Hugo
+                - macOS
+    - add .gitignore to repository
+        - (make sure you are in site root directory in terminal)
+         ```bash
+         touch .gitignore
+         ```
+        - copy and paste generated .gitignore text into new .gitignore file and save.
+    
