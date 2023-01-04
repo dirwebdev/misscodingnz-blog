@@ -74,6 +74,13 @@
                 - VisualStudioCode
                 - Hugo
                 - macOS
+    - add node_modules to .gitignore
+        - in this tutorial node_modules/* to this section...
+        ```bash
+        # Icon must end with two \r
+        Icon
+        node_modules/*
+        ```
     - add .gitignore to repository
         - (make sure you are in site root directory in terminal)
          ```bash
